@@ -6,6 +6,7 @@
   <li><%= @restaurant.category %></li>
 </ul>
 
+<%=link_to "All Reviews of #{@restaurant.name}", restaurant_reviews_path(@restaurant) %>
 <h3>Reviews</h3>
 <ul>
   <% @restaurant.reviews.each do |review|%>

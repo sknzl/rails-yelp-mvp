@@ -13,7 +13,7 @@ class ReviewsController < ApplicationController
   end
 
   def index
-
+    @reviews = @restaurant.reviews
   end
 
   def show

@@ -10,8 +10,10 @@ class RestaurantsController < ApplicationController
   end
 
   def create
-    Restaurant.create(review_params)
-    redirect_to restaurants_path
+    @restaurant = Restaurant.new(review_params)
+    @restaurant.save
+
+    redirect_to restaurant_path(@restaurant)
   end
 
   def show
