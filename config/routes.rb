@@ -4,9 +4,9 @@ Rails.application.routes.draw do
       resources :reviews, only: [:index, :create, :new, :show ]
   end
 
-  namespace :admin do
-    resources :restaurants do
-      resources :reviews
-    end
-  end
+  # namespace :admin do
+  #   resources :restaurants do
+  #     resources :reviews
+  #   end
+  # end
 end
