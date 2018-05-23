@@ -1,0 +1,7 @@
+<h1>Review details</h1>
+<ul>
+  <li>For restaurant: <%= @restaurant.name %></li>
+  <li>Review rating: <%= @review.rating %></li>
+  <li>Review content: <%= @review.content %></li>
+</ul>
+<%=link_to "Go back to restaurant", restaurant_path(@restaurant)  %>
